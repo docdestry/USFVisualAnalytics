@@ -1,0 +1,16 @@
+mychart=(c(5,2,-1,3,-2)
+mychart
+barplot(mychart)
+names(mychart)=c("Tax","Other","Services","Fees", "Grants")
+mychart
+barplot(mychart)
+mycolors=c("green","green","red","green","red")
+barplot(mychart,col=mycolors)
+main=c("Percentage Change in Revenue Change 2019 to 2020")
+mychart
+barplot(mychart, main="Percentage Change in Revenue 2019 to 2020", col=mycolors)
+xlab="Revenue Source"
+mychart
+barplot(mychart, xlab="Revenue Source", main="Percentage Change in Revenue 2019 to 2020", col=mycolors)
+ylab="% Change"
+barplot(mychart, xlab="Revenue Source",ylab="% Change", main="Percentage Change in Revenue 2019 to 2020", col=mycolors)
