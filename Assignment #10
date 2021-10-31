@@ -1,0 +1,5 @@
+options(scipen=999)
+library(ggplot2)
+mygraph<-ggplot(unemployment.rate.1948.2010, aes(x=Year, y=Value)) + geom_point(aes(col=Period), size=2) 
+mygraph + xlim(c(1948, 2010)) + ylim(c(0, 13))
+mygraph + ggtitle("Unemployment Rate 1948-2010") + xlab("Year") + ylab("% of Unemployment")
